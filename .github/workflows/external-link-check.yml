@@ -21,6 +21,8 @@ jobs:
         run: mkdir -p link-checker
 
       # Run lychee and capture errors
+      - name: Debug .lycheeignore
+        run: cat .lycheeignore
 
       - name: Link Checker
         id: lychee
